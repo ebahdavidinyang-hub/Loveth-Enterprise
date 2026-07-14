@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loveth Enterprise | Ladies Fashion Shop</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff8fb;
+}
+
+/* Header */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#ff4081;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#fff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ffe082;
+}
+
+/* Hero */
+
+.hero{
+height:100vh;
+background:url("https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1600&q=80") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.overlay{
+background:rgba(0,0,0,.55);
+padding:50px;
+border-radius:10px;
+color:white;
+}
+
+.overlay h1{
+font-size:55px;
+}
+
+.overlay p{
+margin:20px 0;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#ff4081;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#e91e63;
+}
+
+/* Products */
+
+.products{
+padding:100px 8%;
+text-align:center;
+}
+
+.products h2{
+font-size:40px;
+margin-bottom:40px;
+color:#e91e63;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+margin-top:15px;
+}
+
+.card p{
+padding:15px;
+}
+
+.card a{
+margin-bottom:20px;
+}
+
+/* Features */
+
+.features{
+background:#ffe4ec;
+padding:80px 8%;
+text-align:center;
+}
+
+.features h2{
+margin-bottom:40px;
+color:#e91e63;
+}
+
+.feature-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.box h3{
+color:#ff4081;
+margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+footer a{
+color:#ff4081;
+text-decoration:none;
+margin:0 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Loveth Enterprise</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Models</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="overlay">
+
+<h1>Welcome to Loveth Enterprise</h1>
+
+<p>Beautiful Bags, Shoes, Body Sprays, Jewelry & Fashion Accessories.</p>
+
+<a href="#" class="btn">High Models</a>
+
+</div>
+
+</section>
+
+<section class="products">
+
+<h2>Our Fashion Collection</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://source.unsplash.com/400x400/?handbag" alt="">
+<h3>Luxury Handbag</h3>
+<p>Elegant ladies handbag for every occasion.</p>
+<a href="#" class="btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x400/?heels" alt="">
+<h3>High Heels</h3>
+<p>Fashionable high heels with premium quality.</p>
+<a href="#" class="btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x400/?body-spray" alt="">
+<h3>Body Spray</h3>
+<p>Fresh long-lasting fragrance for women.</p>
+<a href="#" class="btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x400/?perfume" alt="">
+<h3>Perfume</h3>
+<p>Luxury perfume with a sweet fragrance.</p>
+<a href="#" class="btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x400/?watch,women" alt="">
+<h3>Ladies Watch</h3>
+<p>Elegant wristwatch for modern ladies.</p>
+<a href="#" class="btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x400/?necklace" alt="">
+<h3>Necklace</h3>
+<p>Beautiful jewelry to complete your look.</p>
+<a href="#" class="btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x400/?makeup" alt="">
+<h3>Makeup Kit</h3>
+<p>Premium beauty products for every skin tone.</p>
+<a href="#" class="btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x400/?lipstick" alt="">
+<h3>Lipstick</h3>
+<p>Rich colors with long-lasting wear.</p>
+<a href="#" class="btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x400/?wallet,women" alt="">
+<h3>Fashion Wallet</h3>
+<p>Stylish wallet with multiple compartments.</p>
+<a href="#" class="btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x400/?sunglasses,women" alt="">
+<h3>Designer Sunglasses</h3>
+<p>Premium sunglasses with UV protection.</p>
+<a href="#" class="btn">View Details</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Why Shop With Us?</h2>
+
+<div class="feature-box">
+
+<div class="box">
+<h3>Premium Quality</h3>
+<p>We offer high-quality fashion products at affordable prices.</p>
+</div>
+
+<div class="box">
+<h3>Fast Delivery</h3>
+<p>Quick and reliable nationwide delivery service.</p>
+</div>
+
+<div class="box">
+<h3>Latest Fashion</h3>
+<p>Discover the newest handbags, shoes, perfumes, and accessories.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Loveth Enterprise</h2>
+
+<p>12 Fashion Plaza, Lagos, Nigeria</p>
+
+<p>Phone: +234 812 345 6789</p>
+
+<p>
+
+<a href="#">Facebook</a> |
+
+<a href="#">Instagram</a> |
+
+<a href="#">TikTok</a> |
+
+<a href="#">WhatsApp</a>
+
+</p>
+
+<br>
+
+<p>© 2026 Loveth Enterprise. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
